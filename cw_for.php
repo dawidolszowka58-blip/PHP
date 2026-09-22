@@ -1,0 +1,5 @@
+<?php 
+for ($x = 10; $x >= 0; $x -= 2) {
+    echo "Liczba: " . $x . "<br>";
+}
+?>
