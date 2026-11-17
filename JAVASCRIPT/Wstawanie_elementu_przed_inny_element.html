@@ -1,0 +1,8 @@
+<script> 
+    let container = document.createElement("div"); // tworzy nowy element <div>
+    let p = document.createElement("p"); // tworzy nowy element <p>
+    container.appendChild(p); // dodaje element <p> do elementu <div>
+    let span = document.createElement("span"); // tworzy nowy element <span>
+    p.before(span); // dodaje element <span> przed elementem <p>
+    // "<div><span></span><p></p></div>"
+</script>

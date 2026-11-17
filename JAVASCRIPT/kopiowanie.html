@@ -1,0 +1,10 @@
+<p>Wpisz swoje imię</p>
+<input type="text" id="fname" onchange="myFunction()"><br>
+<input type="text" id="result">
+<script>
+    function myFunction() {
+        let x = document.querySelector("#fname");
+        let y = document.querySelector("#result");
+        y.value = x.value.toUpperCase();
+    }
+</script>

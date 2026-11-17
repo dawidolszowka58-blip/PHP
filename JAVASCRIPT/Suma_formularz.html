@@ -1,0 +1,27 @@
+<form> 
+    <input type="checkbox" class="wybierane" value="5">
+    <label for="towar1">Towar 1 = 5zł </label><br>
+    <input type="checkbox" class="wybierane" value="10">
+    <label for="towar2">Towar 2 = 10zł </label><br>
+    <input type="checkbox" class="wybierane" value="15">
+    <label for="towar3">Towar 3 = 15zł </label><br>
+    <input type="checkbox" class="wybierane" value="20">
+    <label for="towar4">Towar 4 = 20zł </label><br>
+    <input type="checkbox" class="wybierane" value="25">
+    <label for="towar5">Towar 5 = 25zł </label><br>
+
+    <input type="button" value="Oblicz cene" onclick="Oblicz()">
+    <p id="wynikowy"> </p>
+</form>
+<script> 
+ function Oblicz() {
+    let wszystkieCheckboxy  = document.querySelectorAll('.wybierane');
+    let paragraf = document.querySelector('#wynikowy');
+    let wynik = 0;
+    wszystkieCheckboxy.forEach(element => {
+        if (element.checked) {
+            wynik += Number(element.value);
+        }
+    });
+    paragraf.innerHTML = "Cena wynosi: " + wynik + " zł"; }
+</script>
