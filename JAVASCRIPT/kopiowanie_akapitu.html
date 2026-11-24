@@ -1,0 +1,16 @@
+<p> Napisz skrypt , ktory kopiuje zawartosci pola tekstowego do drugiego pola tekstowego </p>
+<form> 
+    <label for="source"> Zrodlo: </label>
+    <input type="text" id="source" name="source"> 
+    <label for="destination"> Zrodlo: </label>
+    <input type="text" id="destination" name="destination"> 
+    <button type="button" onclick="copytext()"> Kopiuje </button>
+    <script> 
+    function copytext() { 
+        var sourceText = document.getElementById("source").value;
+        document.getElementById("destination").value = sourceText;
+    }
+    </script>
+</form>
+    
+   
